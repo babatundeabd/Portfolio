@@ -1,0 +1,120 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #008080;
+}
+a{
+    text-decoration: none;
+    color: #008080;
+}
+
+/*navigation styles*/
+#navbar{
+    text-align: right;
+    background: lightcyan;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 8px;
+    right: 8px;
+}
+.nav-class li{
+    list-style: none;
+    display: inline;
+    margin-right: 70px;
+}
+.nav-class a{
+    text-decoration: none;
+}
+
+/*welcome section styles*/
+.hello{
+    background: lightcyan;
+}
+.welcome{
+    padding-top: 20%;
+    height: 100%;
+}
+#description{
+    font-size: 30px;
+}
+.hello h1{
+    margin-bottom: 0;
+    color: black;
+    font-weight: bold;
+}
+.hello p{
+    margin-top: 5px;
+    color: green;
+}
+.head{
+    text-align: center;
+}
+
+/*project section styles*/
+#projects{
+    background: whitesmoke;
+    padding: 10px 0px 30px 0px;
+    display: block;
+}
+.project-tile{
+    border: solid 2px green;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px; 
+}
+.detail{
+    color: black;
+}
+.detail h1{
+    margin-bottom: 0;
+    font-size: 2em;
+}
+.detail p{
+    margin-top: 5px;
+}
+
+/*contact section styles */
+#contact a{
+    background: white;
+    border: solid 2px green;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #008080; 
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+.contact-class{
+    background: lightcyan;
+    margin: 0;
+    padding: 20px;
+}
+#links-id{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;  
+}
+
+/*for mobile and small screens*/
+@media (max-width: 480px) {
+    .welcome{
+        padding-top: 50%;
+    }
+    .project-tile{
+        width: 80%; 
+    }
+    #links-id{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;  
+        margin-top: 0;
+    }
+}
